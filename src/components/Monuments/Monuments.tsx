@@ -7,7 +7,6 @@ interface Props {
 }
 
 export function Monuments({ monuments }: Props) {
-  const [visible, detVisible] = useState(false);
   const [sortByName, setSortByName] = useState(true);
 
   const [visibleCount, setVisibleCount] = useState(3);
