@@ -26,10 +26,7 @@ export function Monuments({ monuments }: Props) {
           </h2>
           <div className="flex items-center gap-4">
             <p>Сортировка по: </p>
-            <button
-              className="px-4 py-2 bg-blue-500 cursor-pointer text-white rounded-lg hover:bg-blue-600"
-              onClick={() => setSortByName(!sortByName)}
-            >
+            <button className="btn" onClick={() => setSortByName(!sortByName)}>
               {sortByName ? "По году" : "По названию"}
             </button>
           </div>
@@ -56,17 +53,14 @@ export function Monuments({ monuments }: Props) {
         </div>
         {visibleCount < monuments.length && (
           <button
-            className="mt-6 px-4 py-2 bg-blue-500 cursor-pointer text-white rounded-lg hover:bg-blue-600"
+            className="btn mt-6"
             onClick={() => setVisibleCount(visibleCount + 3)}
           >
             Показать еще
           </button>
         )}
         {visibleCount >= monuments.length && (
-          <button
-            className="mt-6 px-4 py-2 bg-blue-500 cursor-pointer text-white rounded-lg hover:bg-blue-600"
-            onClick={() => setVisibleCount(3)}
-          >
+          <button className="btn mt-6" onClick={() => setVisibleCount(3)}>
             Скрыть
           </button>
         )}

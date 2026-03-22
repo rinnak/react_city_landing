@@ -39,7 +39,7 @@ export function EntertainmentPlaces({ places }: Props) {
                 />
               </div>
 
-              <div>
+              <div className="p-2">
                 <h3 className="text-xl font-semibold mb-2">{place.name}</h3>
                 <p className="text-gray-600 text-sm">{place.description}</p>
               </div>

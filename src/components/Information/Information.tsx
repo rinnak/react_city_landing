@@ -29,10 +29,7 @@ export function Information({ city }: Props) {
             <p className="mt-4 text-gray-600">
               Население: {city.population.toLocaleString()}
             </p>
-            <button
-              className="cursor-pointer mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
-              onClick={() => setShowMore(!showMore)}
-            >
+            <button className="btn mt-6" onClick={() => setShowMore(!showMore)}>
               {" "}
               Читать больше
             </button>
